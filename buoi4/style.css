@@ -1,0 +1,89 @@
+
+.can{
+    background-color:#ffffff;
+    /* margin-left:100px; */
+    margin: 100px 775px 100px 755px;
+    padding: 10px;
+    border-radius: 20px;
+}
+body{
+    background-color: rgb(229, 232, 135);
+}
+
+.rating {
+    color: #fbc02d;
+    font-size: 40px;
+}
+.star-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 25px;
+    background-color: #dbdad6;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.main{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 35px;
+    background-color:coral;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+li{
+    font-size: 30px;
+}
+h3{
+    font-size: 40px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.feature-list li::before {
+  content: "🔵";
+  margin-right: 8px;
+}
+.usage-guide li::before {
+  content: "⚠️";
+  margin-right: 8px;
+}
+.special-feature-list li {
+  margin-bottom: 5px;
+}
+.special-feature-list li.star1::before {
+  content: "🌟";
+  color: red;
+  margin-right: 8px;
+}
+.special-feature-list li.star2::before {
+  content: "⭐";
+  color: green;
+  margin-right: 8px;
+}
+.special-feature-list li.star3::before {
+  content: "🌠";
+  color: purple;
+  margin-right: 8px;
+}
+.share-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+}
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.instagram { background-color: #c13584; }
+.bun{
+    margin: 100px 775px 100px 795px;
+    padding: 10px;
+}
