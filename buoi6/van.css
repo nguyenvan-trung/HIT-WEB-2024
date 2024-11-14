@@ -1,0 +1,16 @@
+div{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    font-size: 40px;
+}
+p{
+    font-size: 40px;
+}
+.container {
+    display: flex-end;
+}
+button{
+    font-size: 40px;
+}
