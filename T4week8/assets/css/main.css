@@ -1,0 +1,154 @@
+@import "variable.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font) ;
+
+}
+header{
+    height: 600px;
+    background-image: linear-gradient(
+    to right,
+    #fff 0%,
+    #fff 60%,
+    var(--color-secondary) 60%,
+    var(--color-secondary) 100%
+  );
+  /* padding: 0px 172px;
+  position:relative; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+nav .logo-wrap{
+    width: 80px;
+    height: 80px;
+}
+nav .logo-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 64px;
+}
+ul a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+ul a:hover{
+    color: var(--color-secondary);
+}
+.search-wrap{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.search{
+    display: flex;
+    border: 3px solid;
+    height: 40px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 8px;
+    background: #fff;
+}
+.search .icon-wrap{
+    display: flex;
+    align-items: center;
+}
+.search input {
+    outline: none;
+    border:  none;
+}
+/* content */
+header .content{
+    width: 700px;
+    font-size: 20px;
+    font-weight: var(--text-color);
+    padding: 0px 172px;
+    margin-top: 96px;
+}
+header .content .tittle{
+    font-size: 40px;
+    color: var(--text-color);
+    font-family: 700;
+    margin-bottom: 24px;
+}
+header .content .tittle span{
+    color: var(--color-secondary);
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--text-color);
+    color: #fff;
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.coffe{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    left: 44%;
+}
+.coffe img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.coffe-item{
+    right:0;
+    top:0;
+    position: absolute;
+}
+.categories{
+    background: rgb(240, 224, 205);
+    padding: 16px 156px;
+    display: flex;
+    gap: 56px;
+    width: max-content;
+    border-radius: 56px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%);
+    right:50%;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+.categories .cate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+.categories .cate-logo{
+    width: 60px;
+    height: 60px;
+}
+
+.categories .cate-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.categories .cate:nth-child(2){
+    color: #c47f19;
+}
