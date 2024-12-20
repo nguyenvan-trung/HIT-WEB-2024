@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript basic</h1>
+    
+    <script>
+        let bet ;
+        let h =  parseInt(prompt("nhập chiều cao của cây thông: "))
+        for(let i = 0; i < h;i++){
+            let str = '*'
+            let j
+            for(j = 0; j < i;j++){
+                str = '*_' + str + '_*'
+            }
+            for(j;j < h;j++){
+                str = '__' + str + '__'
+            }
+            if(i === 0) bet = str;
+            console.log(str)
+        }
+        console.log(bet)
+        console.log(bet)
+        for(let i = 0; i < 1 ;i++){
+            console.log(bet)
+            if(i === 0){
+                let str = '*_*_*' 
+                for(let j = 1; j < h;j++){
+                   str = '__' + str + '__'
+                }
+                console.log(str)
+            }
+        }
+    </script>
+
+</body>
+</html>
