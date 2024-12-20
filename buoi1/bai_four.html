@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript basic</h1>
+    
+    <script>
+        let input = prompt("Nhập danh sách các số, cách nhau bởi dấu phẩy (,):");
+        let num = input.split(',').map(Number);
+        let l = Math.min(...num);
+        let r = Math.max(...num);
+        let index = num.filter(n => n % 2 === 0).length;
+        console.log("Số lớn nhất: " + r)
+        alert("Số lớn nhất: " + r)
+        console.log("Số nhỏ nhất: " + l)
+        alert("Số nhỏ nhất: " + l)
+        console.log("Số chẵn: " + index)
+        alert("Số chẵn: " + index)
+    </script>
+
+</body>
+</html>
