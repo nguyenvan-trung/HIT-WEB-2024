@@ -154,3 +154,7 @@ header .header-2 .menu .main-menu:hover .sub-menu-sp{
     display: block;
 }
 
+header .header-2 .menu li:hover .title-main-menu{
+    color: var(--main-color);
+}
+
