@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.login{
+    background-color: #e8e5e5;
+    width: 40%;
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login h1{
+    margin-bottom: 10px;
+}
+.login p{
+    margin-bottom: 10px;
+}
+.login div input{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+.login div button{
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+}
+.login div button:hover{
+    background-color: #d6533c;
+}
+.sign{
+    display: flex;
+    justify-content: space-around;
+}
+.sign .in{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.facebook{
+    background-color: #3b73eb;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.facebook:hover{
+    background-color: #2951a8;
+}
+.google{
+    background-color: #eb742a;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.google:hover{
+    background-color: #aa541f;
+}
+.sign .in i{
+    font-size: 30px;
+}

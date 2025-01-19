@@ -4,23 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
 <body>
-    <script>
-        let courses = [1, 2, 3, 4, 5, 6]
-        // var course = courses.filter(function (course, index) {
-        //     return course >= 100;
-        // });
+    <header>
+        <div class="header-1">
+            <div class="logo-1">
+                <img src="./assets/img/logo_1.webp" alt="logo-1">
+            </div>
+            <div class="box-search">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="menu-right">
 
-        // console.log(course);
-        var course = courses.find(function (course, index) {
-            return course === 6;
-        });
+                <a class="button-menu-right" href="">
+                    <div>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <br>
+                        <a style="font-size: 14px;" href="">Yêu thích</a>
+                    </div>
+                </a>
 
-        console.log(course);
-    </script>
+                <a class="button-menu-right" href="">
+                    <div>
+                        <a href=""><i class="fa-regular fa-user"></i></a>
+                        <br>
+                        <a style="font-size: 14px;" href="">Tài khoản</a>
+                    </div>
+                </a>
+
+                <a class="button-menu-right" href="">
+                    <div>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <br>
+                        <a style="font-size: 14px;" href="">Giỏ hàng</a>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="header-2">
+            <ul class="menu">
+                <li><a class="title-main-menu" href="">Trang chủ</a></li>
+                <li class="main-menu">
+                    <a class="title-main-menu" href="">Nữ</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Phụ kiện nữ</a></li>
+                                <li><a href="">Tất nữ</a></li>
+                                <li><a href="">Túi nữ</a></li>
+                                <li><a href="">Phụ kiện khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Áo nữ</a></li>
+                                <li><a href="">Áo khoác nữ</a></li>
+                                <li><a href="">Áo hoodie - Áo nỉ nữ</a></li>
+                                <li><a href="">Áo polo nữ</a></li>
+                                <li><a href="">Áo sơ mi nữ</a></li>
+                                <li><a href="">Áo thun nữ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Quần nữ</a></li>
+                                <li><a href="">Quần dài nữ</a></li>
+                                <li><a href="">Quần nỉ nữ</a></li>
+                                <li><a href="">Quần kaki nữ</a></li>
+                                <li><a href="">Quần jeans nữ</a></li>
+                                <li><a href="">Quần âu nữ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Đồ thể thao nữ</a></li>
+                                <li><a href="">Quần thể thao nữ</a></li>
+                                <li><a href="">Áo polo thể thao nữ</a></li>
+                                <li><a href="">Bộ thể thao nữ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-menu">
+                    <a class="title-main-menu" href="">Nam</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Phụ kiện nam</a></li>
+                                <li><a href="">Tất nam</a></li>
+                                <li><a href="">Túi sách nam</a></li>
+                                <li><a href="">Mũ nam</a></li>
+                                <li><a href="">Thắt lưng nam</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Áo nam</a></li>
+                                <li><a href="">Áo khoác nam</a></li>
+                                <li><a href="">Áo nỉ nam</a></li>
+                                <li><a href="">Áo len nam/a></li>
+                                <li><a href="">Áo sơ mi nam</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Quần nam</a></li>
+                                <li><a href="">Quần kaki</a></li>
+                                <li><a href="">Quần short nam</a></li>
+                                <li><a href="">Quần jeans nam</a></li>
+                                <li><a href="">Quần âu nam</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a class="title-sub-menu" href="">Đồ thể thao nam</a></li>
+                                <li><a href="">Quần thể thao nam</a></li>
+                                <li><a href="">Áo polo thể thao nam</a></li>
+                                <li><a href="">Áo thun nam</a></li>
+                                <li><a href="">Bộ thể thao nam</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="title-main-menu" href="">Tin tức</a></li>
+                <li><a class="title-main-menu" href="">Liên hệ</a></li>
+                <li><a class="title-main-menu" href="">Hệ thống cửa hàng</a></li>
+                <li><a class="title-main-menu" href="">Kiểm tra đơn hàng</a></li>
+                <li class="main-menu">
+                    <a class="title-main-menu" href="">Chi tiết sản phẩm</a>
+                    <ul class="sub-menu-sp">
+                        <li><a href="">Layout sản phẩm 1</a></li>
+                        <li><a href="">Layout sản phẩm 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <p style="margin-top: 20px;">Trang Chủ > <b style="color: #ff6347;margin-left: 10px;"> Đăng Nhập Tài Khoản</b></p>
+        <section>
+            <div class="login">
+                <h1>ĐĂNG NHẬP</h1>
+                <p>Nếu Bạn Chưa Có Tài Khoản, <b style="color: #ff6347;margin-left: 10px;cursor: pointer;">Đăng Nhập Tại Đây</b></p>
+                <div><input type="text" placeholder="Email"></div>
+                <div><input type="text" placeholder="Mật Khẩu"></div>
+                <div><button>Đăng Nhập</button></div>
+                <p>Quên Mật Khẩu ?</p>
+                <div class="sign">
+                    <div class="in facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="in google">
+                        <i class="fa-brands fa-google"></i>
+                        <a href="#">Google</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="logo">
+            <div class="centre"><img src="./assets/img/logo-footer.png" alt=""></div>
+            <hr>
+            <div>
+                <p class="centre_one" >Kết Nối</p>
+                <div class="centre_two">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p><strong> CÔNG TY ND THEME </strong></p>
+            <p>Số ĐKKD 0135792468 cấp ngày 30/05/2023 tại Sở Kế hoạch Đầu tư TP. Hà Nội</p>
+            <p><strong>Địa Chỉ: </strong>  266 Đội Cấn, Ba Đình, Hà Nội</p>
+            <p><strong>Email: </strong>support@sapo.vn</p>
+            <p><strong>Hoiline: </strong> 1900 6750</p>
+        </div>
+        <div>
+            <p><strong>VỀ CHÚNG TÔI</strong></p>
+            <ul>
+                <li>Giới Thiệu</li>
+                <li>Liên Hệ</li>
+                <li>Tin Tức</li>
+                <li>Hệ Thống Cửa Hàng</li>
+                <li>Sản Phẩm</li>
+            </ul>
+        </div>
+        <div>
+            <p><strong>DỊCH VỤ KHÁCH HÀNG</strong></p>
+            <ul>
+                <li>Kiểm Tra Đơn Hàng</li>
+                <li>Chính Sách Vận Chuyển</li>
+                <li>Chính Sách Đổi Trả</li>
+                <li>Bảo Mật Khách Hàng</li>
+                <li>Đăng Kí Tài Khoản</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
