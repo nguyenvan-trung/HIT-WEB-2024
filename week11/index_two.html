@@ -74,12 +74,12 @@
         <div class="box_three"></div>
     </div>
     <script>
-        let arr = Array(10001).fill(0);
+        let arr = Array(1000000).fill(0);
 
         function Prime() {
             arr[0] = 2;
             arr[1] = 1;
-            for (let i = 2; i < 10001; i++) {
+            for (let i = 2; i < 1000000; i++) {
                 let k = i;
                 for (let j = 2; j * j <= k; j++) {
                     if (k % j === 0) {
@@ -104,7 +104,7 @@
         button.addEventListener("click", function () {
             const int = Number(input.value);
             if (Number.isInteger(int) && int >= 0) {
-                if (int > 10000) {
+                if (int > 1000000) {
                     alert("Hàm chạy tối đa 10000: xin nhập lại");
                     return;
                 }

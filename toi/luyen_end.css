@@ -1,0 +1,47 @@
+:root{
+    --text-color:red;
+}
+h1{
+    color:var(--text-color);
+}
+a::after{
+    content: "(" attr(href)")";
+}
+.back_ground_one{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(activity.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    /* 
+    var()
+    linear-gradient()
+    rgba()
+    rgb()
+    calc()
+    attr() 
+    */
+}
+div{
+    display: inline block;
+    background-color: aquamarine;
+}
+a:hover{
+    color: rgb(226, 29, 29);
+}
+ul {
+    display: none;
+    width: 100px;
+    height: 100px;
+    color:brown;
+    background-color: blueviolet;
+}
+a:hover +  ul{
+    display: block;
+}
+div ul li{
+    display: block;
+}
+div ul li:hover{
+    color: rgb(79, 14, 221);
+}
