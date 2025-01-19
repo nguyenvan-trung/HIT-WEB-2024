@@ -1,7 +1,0 @@
-- Design: https://www.figma.com/design/Zx4YgEUqQJNKhvcQQpI8KT/Kiem-tra-web?node-id=0-1&t=DamDYR2rDYCV5Kk3-1
-
-- Font chữ: https://fonts.google.com/specimen/Be+Vietnam+Pro
-
-- Màu chữ chủ đạo: #F06C25
-
-- Đặt tên file: TranDanhKhang_2022600905
