@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Shape Drawer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input-container {
+            width: 40%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .input-container h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .draw,
+        .reset {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .draw {
+            background-color: #f06c25;
+        }
+
+        .reset {
+            background-color: #b1b1b1;
+            margin-left: 10px;
+        }
+
+        .output {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .output-container {
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: black;
+            text-align: center;
+            line-height: 200px;
+            position: relative;
+            animation: zoom 2s ease-in-out;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Input Section -->
+        <section class="input-container">
+            <h1>Shape Drawer v1.0</h1>
+            <table>
+                <tr>
+                    <td><label for="width">Width</label></td>
+                    <td><input type="text" id="width" placeholder="Enter width"></td>
+                </tr>
+                <tr>
+                    <td><label for="height">Height</label></td>
+                    <td><input type="text" id="height" placeholder="Enter height"></td>
+                </tr>
+                <tr>
+                    <td><label for="padding">Padding</label></td>
+                    <td><input type="text" id="padding" placeholder="Enter padding"></td>
+                </tr>
+                <tr>
+                    <td><label for="margin">Margin</label></td>
+                    <td><input type="text" id="margin" placeholder="Enter margin"></td>
+                </tr>
+                <tr>
+                    <td><label for="background">Background Color</label></td>
+                    <td><input type="text" id="background" placeholder="Enter color"></td>
+                </tr>
+                <tr>
+                    <td><label for="background-image">Background Image</label></td>
+                    <td><input type="text" id="background-image" placeholder="Enter image URL"></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Text Color</label></td>
+                    <td><input type="text" id="color" placeholder="Enter text color"></td>
+                </tr>
+                <tr>
+                    <td><label for="content">Content</label></td>
+                    <td><input type="text" id="content" placeholder="Enter content"></td>
+                </tr>
+            </table>
+            <button class="draw">Draw</button>
+            <button class="reset">Reset</button>
+        </section>
+
+        <!-- Output Section -->
+        <section class="output">
+            <div class="output-container">Hello</div>
+        </section>
+    </div>
+
+    <script>
+        // Input elements
+        const widthInput = document.querySelector("#width");
+        const heightInput = document.querySelector("#height");
+        const paddingInput = document.querySelector("#padding");
+        const marginInput = document.querySelector("#margin");
+        const backgroundInput = document.querySelector("#background");
+        const backgroundImageInput = document.querySelector("#background-image");
+        const colorInput = document.querySelector("#color");
+        const contentInput = document.querySelector("#content");
+
+        // Buttons and output container
+        const drawButton = document.querySelector(".draw");
+        const resetButton = document.querySelector(".reset");
+        const outputContainer = document.querySelector(".output-container");
+
+        // Draw shape
+        drawButton.addEventListener("click", () => {
+            outputContainer.style.display = "block";
+            outputContainer.style.width = widthInput.value;
+            outputContainer.style.height = heightInput.value;
+            outputContainer.style.padding = paddingInput.value;
+            outputContainer.style.margin = marginInput.value;
+            outputContainer.style.backgroundColor = backgroundInput.value;
+            outputContainer.style.backgroundImage = `url(${backgroundImageInput.value})`;
+            outputContainer.style.color = colorInput.value;
+            outputContainer.textContent = contentInput.value;
+        });
+
+        // Reset shape
+        resetButton.addEventListener("click", resetShape);
+
+        function resetShape() {
+            outputContainer.style.display = "none";
+            outputContainer.removeAttribute("style");
+            outputContainer.textContent = "Hello";
+        }
+    </script>
+</body>
+
+</html>
