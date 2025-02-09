@@ -1,0 +1,187 @@
+.title-icon{
+    background-image: url('../img/slider_1.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.title-icon-no{
+    position: relative;
+}
+.title-icon-top{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right:  50px;
+    position: absolute;
+    top: -50px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng bóng */
+    transition: all 0.3s ease-in-out;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top-list-product{
+    position: relative;
+}
+.top-list-product h1{
+    cursor: pointer;
+    padding: 20px;
+    background-color: var(--green--color);
+    color: #fff;
+    
+}
+.top-list-product div ul{
+    display: none;
+    position: absolute;
+    list-style-type:square;
+    top: 70%;
+    width: 82%;
+    background-color: rgb(181, 183, 183);
+}
+.top-list-product:hover div ul{
+    display: block;
+}
+.top-list-product div ul li::marker{
+    color: var(--green--color);
+}
+.top-list-product div ul li{
+    padding: 4px;
+    cursor: pointer;
+}
+.top-list-product div ul li:hover{
+    color: var(--green--color);
+}
+.login{
+    text-align: center;
+    padding-top: 4px;
+}
+.search-icon{
+    padding: 10px;
+    background-color: var(--green--color);
+}
+.top a{
+    padding-top: 40px;
+}
+
+/* trái cây và rau */
+.fruit-and-vegetable {
+    background-image: url('/acces/img/banner.jpg');
+    width: 100%;
+    height: 350px;
+    background-size: 100%;  /* Ảnh hiển thị đúng kích thước phần tử */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    transition: background-size 0.5s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.fruit-and-vegetable:hover {
+    background-size: 110%; /* Phóng to ảnh nền bên trong 10% */
+}
+/* giao hàng , hỗ trợ , đổi trả , giá tiêu */
+.four-support{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+.support div {
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.support div:hover {
+    animation: rotate 1s linear infinite; /* Quay vô hạn khi hover */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.map{
+    display: flex;
+    gap: 50px;
+}
+.introduce{
+    padding-top: 180px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.duce{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+.name{
+    display: flex;
+    gap: 20px;
+}
+.name i{
+    border-radius: 50%;
+    border: 1px solid #3b9048;
+    color: #3b9048;
+    padding: 10px;
+}
+.phone-full{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.map input{
+    padding: 10px;
+    font-size: 16px;
+}
+.send{
+    background-color: #3b9048;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.send:hover{
+    background-color: #2f7139;
+}
+.login-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.login-up input{
+    padding: 16px;
+    min-width: 400px;
+}
+.up{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.up-facebook{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: #3b5998;
+    max-width: 120px;
+    color: #fff;
+}
+.up-google{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: #e14b33;
+    max-width: 120px;
+    color: #fff;
+}

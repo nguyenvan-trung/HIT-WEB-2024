@@ -1,0 +1,124 @@
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.about-we ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.about-we ul li{
+    padding: 4px;
+    cursor: pointer;
+}
+.nick-we{
+    display: flex;
+    justify-content: space-around;
+}
+.nick-we i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff; /* Thêm màu nền để hiệu ứng đổ bóng rõ hơn */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Tạo hiệu ứng bóng */
+    transition: all 0.3s ease-in-out;
+}
+
+.nick-we i:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Tăng độ sâu khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nhấn nổi */
+}
+.login-we input{
+    padding: 12px;
+    background-color: rgb(183, 182, 180);
+    border: none;
+}
+.login-we span{
+    padding: 10px;
+    background-color: #3b9048;
+    color: #fff;
+}
+.login-we input::placeholder {
+    color: white;
+    opacity: 1; 
+}
+.login-we span:hover{
+    background-color: #31783c;
+}
+.sea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 16px;
+}
+.sea span a{
+    color: #3b9048 !important;
+    padding-left: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+.table-all-sp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.cricle{
+    text-align: center;
+    margin-top: 40px;
+}
+.cricle span{
+    padding: 6px 10px 6px 10px;
+    border-radius: 50%;
+    background-color: #616361;
+    color: #fff;
+}
+.sp-color{
+    background-color: #3b9048 !important;
+}
+.all-sp{
+    display: flex;
+    justify-content: space-between;
+}
+.sp{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.sp ul{
+    display: none;
+    list-style-type: none;
+    padding-left: 10px;
+    position: absolute;
+    z-index: 2;
+}
+.sp:hover ul{
+    display: block;
+    background-color: #b5b4b4;
+}
+.sp div span{
+    padding: 10px;
+    background-color: #a5a9a5;
+    color: #fff;
+}
+.sp ul li{
+    padding: 2px;
+    color: #fff;
+}
+.sp ul li:hover{
+    color: #3b9048;
+}
+.item ul{
+    list-style-type: circle;
+    border: 1px solid #3b9048;
+    padding-left: 50px;
+}
+.item ul li{
+    padding-bottom: 2px;
+}
+.item ul li::marker{
+    font-size: 28px;
+}
+.item ul li a:hover{
+    color: #3b9048;
+}
