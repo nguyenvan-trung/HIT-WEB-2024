@@ -394,12 +394,12 @@ header .header-2 .menu li:hover .title-main-menu {
 }
 
 .item-flash .item .navigation-button a img {
-    background-image: url(/assets/img/sp3-5-77cd757d-c5cb-4c38-afa9-ccd0c42b16d5.webp);
+    background-color: #E7E6EB;
     background-size: cover;
 }
 
 .card-list .item_card .navigation-button a img {
-    background-image: url(/assets/img/sp3-5-77cd757d-c5cb-4c38-afa9-ccd0c42b16d5.webp);
+    background-color: #E7E6EB;
     background-size: cover;
     margin-left: 10px;
     margin-bottom: 8px;
@@ -787,4 +787,21 @@ header .header-2 .menu li:hover .title-main-menu {
     border: none;
     border-radius: 10px;
     font-weight: 500;
+}
+
+
+/* HIEUUNGLACIMG */
+.image-container img {
+    transition: transform 0.08s ease-in-out;
+}
+
+.image-container:hover img {
+    animation: shake 0.35s ease-in-out 2; /* Rung 10 lần trong 1 giây */
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
 }
