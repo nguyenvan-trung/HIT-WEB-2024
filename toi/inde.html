@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Nhập Tên Nước Của Bạn">
+    <button onclick="toButton()">Run</button>
+    <script>
+        async function getData(e) {
+
+            const information = await fetch(`https://restcountries.com/v3.1/name/${e}`)
+            const nam = await information.json()
+            console.log(nam)
+            const country = nam[0].name.common
+            console.log(country)
+            const capital = nam[0].capital
+            console.log(capital)
+            const region = nam[0].postalCode.region
+            // console.log(region)
+            const population = nam[0].population
+            const offcial = nam[0].name.official
+            const area = nam[0].area
+            const flags = nam[0].flags
+            const div = document.querySelector('body')
+            div.innerHTML = `
+                <div>
+                ${country}
+                ${capital}
+                ${region}
+                ${population}
+                ${offcial}
+                ${area}
+                ${flags}
+                </div>
+            `;
+        }
+        function toButton() {
+            const input = document.querySelector('input')
+            if (input.value === '') {
+
+                alert('"bạn chưa nhập dữ liệu"')
+            }
+            getData(input.value)
+        }
+    </script>
+</body>
+
+</html>
