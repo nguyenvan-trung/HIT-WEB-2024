@@ -1,0 +1,134 @@
+.menu_color{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_color span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.color-list li div{
+    border: 1px solid #e3e2e2;
+    border-radius: 20px;
+    padding: 10px;
+}
+.color-list {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.color-list li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.color-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.color-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.color-list div {
+    display: flex;
+    align-items: center;
+}
+.color-list li div:hover{
+    border: 1px solid #ff6347;
+}
+.color-list li div:hover a{
+    color: #ff6347 !important;
+}
+
+.button_style{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style_top{
+    display: flex;
+    justify-content: space-between;
+}
+.style_top span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.style_clothes ul{
+    padding-left: 10px;
+}
+.style_clothes ul li{
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.i{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.i_cate{
+    color: #ff6347;
+}
+.button_style span{
+    display: none;
+    cursor: pointer;
+}
+.cate_block{
+    display: block !important;
+}
+.cate{
+    color: #ffffff !important;
+    background-color: #ff6347 !important;
+}
+/* Ẩn ul ban đầu */
+#categoryList {
+    display: block;
+    cursor: pointer;
+}
+
+/* Xoay biểu tượng 180 độ */
+.style_top span.rotate {
+    transform: rotate(180deg);
+    color: #ff6347;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hiển thị ul */
+#categoryList.show {
+    display: none;
+}
+/* Ẩn container ban đầu */
+.size-contain {
+    display: block;
+}
+
+/* Xoay biểu tượng 180 độ */
+.size_top span.rotate {
+    transform: rotate(180deg);
+    color: #ff6347;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hiển thị container */
+.size-contain.show {
+    display: none;
+}
