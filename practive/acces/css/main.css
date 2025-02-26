@@ -1,0 +1,122 @@
+@import url('front.css');
+@import url('responsible.css');
+@import url('valiable.css');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+.all-product{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.all-picture-product{
+    flex: 3;
+}
+.all-listProduct{
+    flex: 1;
+}
+.shoping {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(119, 117, 117, 0.5); 
+    height: 100%;
+    z-index: 100;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; /* Dùng flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.shoping-sum{
+    padding: 20px;
+    width: 80%;
+    background-color: #ffffff !important;
+    height: 8%;
+
+}
+@media screen and (max-width: 932px) {
+    .title-fruit{
+        display: flex;
+        justify-content: space-around;
+    }
+    .title-fruit-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-icon-top{
+        margin: 0;
+        width: 50%;
+        right: 0;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top a{
+        padding-top: 10px;
+    }
+    .top-search{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-list-menu{
+        padding-top: 10px;
+    }
+    .class-fruit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .name-price-fruit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fruit-and-vegetable{
+        height: 200px;
+    }
+    .four-support{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .belive-product-table{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        margin: 20px;
+    }
+    .picture-dinner{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .breakfast a img{
+        width: 100%;
+    }
+    .belive{
+        display: flex;
+        flex-direction: column;
+    }
+    .information{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-we{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .login-we{
+        display: flex;
+        flex-direction: column;
+    }
+}

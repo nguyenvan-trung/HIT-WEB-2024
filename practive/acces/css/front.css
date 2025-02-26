@@ -1,0 +1,192 @@
+:root{
+    --green--color:#3b9048;
+}
+.title-fruit{
+    background-color:#333;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+.title-fruit-list{
+    display: flex;
+    align-items: center;
+}
+.title-fruit-list span{
+    font-size: 16px;
+    color: aliceblue;
+}
+.title-fruit-list span:hover{
+    color: var(--green--color) !important;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.top-search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.top-search div input{
+    padding: 10px;
+}
+.top-list-menu{
+    padding-top: 40px;
+    position: relative;
+}
+/* menu sản phẩm */
+.top-list-menu div ul{
+    display: none;
+    position: absolute;
+    background-color: #c1bebe;
+    list-style-type: square;
+    width: 150px;
+}
+.top-list-menu div ul li{
+    padding: 4px;
+    cursor: pointer;
+}
+.top-list-menu div ul li:hover{
+    color: #3b9048;
+}
+.top-list-menu div ul li::marker{
+    color: var(--green--color);
+}
+.top-list-menu:hover div ul{
+    display: block;
+}
+/* bức tranh quang cáo banner  */
+.img-fruit-banner{
+    display: flex;
+    margin-bottom: 50px;
+}
+.img-fruit-banner a img{
+    width: 100%;
+}
+/* danh mục trái cây  */
+.class-fruit{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.class-fruit li{
+    padding: 10px;
+}
+.fruit-color{
+    background-color: #3b9048;
+    color: #fff;
+}
+.name-price-fruit{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.box{
+    position: relative;
+}
+.box-pair{
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #e4e2e2;
+    width: 16%;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.box-pair i{
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.box-pair i:hover{
+    background-color: #3b9048;
+    color: #fff;
+}
+.box:hover .box-pair{
+    display: block;
+}
+.box:hover img {
+    opacity: 0.5; 
+}
+.belive-product-table{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.belive{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+.chooce{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.chooce-one{
+    width: 20px;
+    height: 20px;
+    background-color: #797979;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.chooce-color{
+    background-color: #3b9048 !important;
+}
+.chooce-two {
+    display: flex;  /* Dùng flex để căn giữa số 2 */
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: #797979;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.picture-dinner{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin: 50px;
+}
+.have{
+    color: #797979;
+}
+.sunch{
+    display: flex;
+    gap: 20px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.list a{
+    width: 20%;
+    height: 100px;
+}
+.list a img{
+    width: 100%;
+    margin-bottom: 50px;
+}

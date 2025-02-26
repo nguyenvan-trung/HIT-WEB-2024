@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(8, 1fr);  
+    width: 1000px;
+    height: 500px;                
+    background-color: #8cd3a3;                      
+}
+body{
+    display: flex;                        /* Căn giữa nội dung */
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgb(164, 202, 166);
+}
+.box {
+    grid-column: 1 / -1;
+    grid-row: 1;     
+    background-color: rgb(28, 205, 40);
+}
+.box1{
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    background-color: beige;
+}
+.box2{
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+    background-color: rgb(35, 153, 203);
+}
+.box3{
+    grid-column: 6 / 7;
+    grid-row: 3 / 5;
+    background-color: rgb(193, 59, 126);
+}
+.box4{
+    grid-column: 7 / 8;
+    grid-row: 3 / 5;
+    background-color: rgb(192, 184, 188);
+}
+.box5{
+    grid-column: 8 / -1;
+    grid-row: 2 / 4;
+    background-color: rgb(196, 199, 109);
+}
+.box6{
+    grid-column: 8 / -1;
+    grid-row: 4 / 8;
+    background-color: rgb(168, 69, 188);
+}
+.box7{
+    grid-column: 1 / 5 ;
+    grid-row: 5 / 6;
+    background-color: rgb(86, 151, 192);
+}
+.box8{
+    grid-column: 1 / 5 ;
+    grid-row: 6 / 8;
+    background-color: rgb(197, 55, 181);
+}
+.box9{
+    grid-column: 5 / 8 ;
+    grid-row: 5 / 7;
+    background-color: rgb(45, 172, 96);
+}
+.box10{
+    grid-column: 5 / 8 ;
+    grid-row: 7 / 8;
+    background-color: rgb(194, 198, 201);
+}
+.box11{
+    grid-column: 1 / -1 ;
+    grid-row: 8 / -1;
+    background-color: rgb(189, 113, 26);
+}
+div{
+    border-radius: 5px;
+}

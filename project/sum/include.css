@@ -1,0 +1,235 @@
+.fom {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.fom_top, .fom_then_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fom_top h3, .fom_then_top h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.fom_top button, .fom_then_top button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fom_head, .fom_then_head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    transition: max-height 0.3s ease-out, opacity 0.3s;
+}
+
+.fom_head.hidden, .fom_then_head.hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.fom_head div, .fom_then_head div {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fom_head div button, .fom_then_head div button {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.fom_head div button::after, .fom_then_head div button::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fom_head div.active button, .fom_then_head div.active button {
+    background-color: #ff6347;
+    border-color: #ff6347;
+}
+
+.fom_head div.active button::after, .fom_then_head div.active button::after {
+    display: block;
+}
+.size {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.size_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size_top h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.size_top button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.size_head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    transition: max-height 0.3s ease-out, opacity 0.3s;
+}
+
+.size_head.hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.size_head div {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.size_head div:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.size_head div.active {
+    background-color: #ff6347;
+    color: white;
+    border-color: #ff6347;
+}
+
+.color {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.color_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.color_top h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.color_top button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.color_head {
+    margin-top: 15px;
+    display: block;
+    transition: max-height 0.3s ease-out, opacity 0.3s;
+}
+
+.color_head.hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.color_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.color_row div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #d2d1d1;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+.color_row div:hover{
+    border: 1px solid #ff6347;
+}
+.color_row div div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.color_row div div:hover{
+    border: 1px solid #ff6347;
+}
+
+.color_row a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.color_row a:hover {
+    color: #ff6347;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+hr{
+    border: none;
+    height: 4px;
+    background-color: #f1eded;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

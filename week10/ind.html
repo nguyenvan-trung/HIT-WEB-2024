@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Asabeneh Yetayeh challenges in 2020</h1>
+      <h2>30DaysOfJavaScript Challenge</h2>
+      <h1 class="title" id="first-title">First Title</h1> 
+      <h1 class="title" id="second-title">Second Title</h1>
+      <h1 class="title" id="third-title">Third Title</h1>
+      <h1></h1>
+      <ul></ul>
+      <a href=""></a>
+    </div>
+    <script>
+    //   const lists = `
+    //         <li>30DaysOfPython Challenge Done</li>
+    //         <li>30DaysOfJavaScript Challenge Ongoing</li>
+    //         <li>30DaysOfReact Challenge Coming</li>
+    //         <li>30DaysOfFullStack Challenge Coming</li>
+    //         <li>30DaysOfDataAnalysis Challenge Coming</li>
+    //         <li>30DaysOfReactNative Challenge Coming</li>
+    //         <li>30DaysOfMachineLearning Challenge Coming</li>`;
+    //   const ul = document.querySelector("ul");
+    //   ul.innerHTML = lists;
+    // const titles = document.querySelectorAll("h1");
+    // titles.forEach((title, i) => {
+    //   title.style.fontSize = "24px"; // all titles will have 24px font size
+    //   if (i % 2 === 0) {
+    //     title.style.backgroundColor = "green";
+    //   } else {
+    //     title.style.fontSize = "50px";
+    //   }
+    // });
+    
+    // creating multiple elements and appending to parent element
+    // let title;
+    //   for (let i = 0; i < 3; i++) {
+    //     title = document.createElement("h1");
+    //     title.className = "title";
+    //     title.style.fontSize = "100px";
+    //     title.textContent = i;
+    //     document.body.appendChild(title);
+    //   }
+    const ul  = document.querySelector("ul")
+    let title;
+    for (let i = 0; i < 3; i++) {
+        title = document.createElement("li");
+        title.className = "title";
+        title.style.fontSize = "100px";
+        title.textContent = i;
+        console.log(title)
+        ul.appendChild(title); 
+    }
+    // const lists = document.querySelector('li')
+    const lis = document.querySelectorAll("ul li")
+    ul.removeChild(lis[1])
+    </script>
+  </body>
+</html>

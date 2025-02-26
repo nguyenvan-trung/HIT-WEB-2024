@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sea fruits </title>
+    <link rel="stylesheet" href="acces/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+
+<body>
+    <div>
+        <header class="title-fruit">
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_1.png" alt=""></a>
+                <span>CÀ RỐT</span>
+            </div>
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_2.png" alt=""></a>
+                <span>KHOAI TÂY</span>
+            </div>
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_3.png" alt=""></a>
+                <span>DƯA HẤU</span>
+            </div>
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_4.png" alt=""></a>
+                <span>TRÁI CAM<span>
+            </div>
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_5.png" alt=""></a>
+                <span>ĐU ĐỦ</span>
+            </div>
+            <div class="title-fruit-list">
+                <a href="#"><img src="acces/img/header_6.png" alt=""></a>
+                <span>CÀ CHUA</span>
+            </div>
+        </header>
+        <nav class="title-icon-no">
+            <section class="title-icon-top">
+                <div class="top">
+                    <img src="acces/img/logo.png" alt="">
+                    <div class="login">
+                        <a href="goo.html">Đăng Kí</a>
+                        <span style="color: rgb(153, 154, 155);">|</span>
+                        <a href="face.html">Đăng Nhập</a>
+                        <a href="#" id="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <br>
+                <div class="top">
+                    <div class="top-list-product">
+                        <h1>Danh Mục Sản Phẩm</h1>
+                        <div>
+                            <ul>
+                                <li><a href="#">Trái cây</a></li>
+                                <li><a href="#">Trái cây Khô</a> </li>
+                                <li><a href="#">Trái cây Nhập Khẩu</a> </li>
+                                <li><a href="#">Rau củ Quả</a></li>
+                                <li><a href="#">Củ Quả Hữu Cơ</a> </li>
+                                <li><a href="#">Gia Vị nấu ăn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="index.html">Trang Chủ</a>
+                    <a href="ht.html">Giới Thiệu</a>
+                    <div class="top-list-menu">
+                        <a href="allpro.html" style="color:  #3b9048;">Sản Phẩm</a>
+                        <div>
+                            <ul>
+                                <li><a href="#">Trái cây</a></li>
+                                <li><a href="#">Trái cây Khô</a> </li>
+                                <li><a href="#">Trái cây Nhập Khẩu</a> </li>
+                                <li><a href="#">Rau củ Quả</a></li>
+                                <li><a href="#">Củ Quả Hữu Cơ</a> </li>
+                                <li><a href="#">Gia Vị nấu ăn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="d.html">Tin Tức</a>
+                    <a href="e.html">Liên Hệ</a>
+                    <div class="top-search">
+                        <div><input type="text" placeholder="Tìm Kiếm"></div>
+                        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                </div> 
+            </section>
+            <section class="introduce">
+                <div style="margin-bottom: 40px;">
+                    <span><a href="index.html">Trang Chủ</a></span>
+                    <span>></span>
+                    <span style="color: #3b9048; "> Tất Cả Sản Phẩm </span>
+                </div>
+                <div class="all-product">
+                    <div class="all-picture-product">
+                        <img src="acces/img/banner.jpg" alt="" width="90%">
+                        <div class="all-sp">
+                            <h2>Tất Cả Sản Phẩm</h2>
+                            <div class="sp">
+                                <span style="padding-top: 30px;">Sắp Xếp Theo: </span>
+                                <div class="sort-box" style="padding-top: 30px;">
+                                    <span id="selected-sort">Mặc Định</span>
+                                    <ul id="sort-options">
+                                        <li data-sort="default">Mặc Định</li>
+                                        <li data-sort="az">A → Z</li>
+                                        <li data-sort="za">Z → A</li>
+                                        <li data-sort="price-asc">Giá Tăng Dần</li>
+                                        <li data-sort="price-desc">Giá Giảm Dần</li>
+                                        <li data-sort="newest">Hàng Mới Nhất</li>
+                                        <li data-sort="oldest">Hàng Cũ Nhất</li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+                        <hr style="background-color: #3b9048; width: 90%; height: 2px;">
+                        <!-- sản Phẩm -->
+                        <div class="table-all-sp"></div>
+                        <div class="div-add">
+                        </div>
+                        <div class="cricle">
+                            <span class=" cricle-one sp-color" onclick="changeColorAll(this)">1</span>
+                            <span class=" cricle-one" onclick="changeColorAll(this)">2</span>
+                        </div>
+                    </div>
+                    <div class="all-listProduct">
+                        <div class="item">
+                            <h1 style="text-align: center;">DANH MỤC</h1>
+                            <hr style="max-width: 30px; background-color:  #3b9048; height: 2px;">
+                            <ul>
+                                <input type="radio"  name="fav_language" value="1">
+                                <label for="1"><a href="index.html">Trang Chủ</a></label><br>
+                                <input type="radio"  name="fav_language" value="2">
+                                <label for="2"><a href="ht.html">Giới Thiệu</a> </label><br>
+                                <input type="radio"  name="fav_language" value="3">
+                                <label for="3"><a href="allpro.html">Sản Phẩm</a></label><br>
+                                <input type="radio"  name="fav_language" value="4">
+                                <label for="4"><a href="d.html">Tin Tức</a></label><br>
+                                <input type="radio"  name="fav_language" value="5">
+                                <label for="5"><a href="e.html">Liên Hệ</a></label><br>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="item">
+                            <h1 style="text-align: center;">THƯƠNG HIỆU</h1>
+                            <hr style="max-width: 30px; background-color:  #3b9048; height: 2px;">
+                            <ul>
+                                <input type="radio"  name="fav_language" value="1">
+                                <label for="1">Fresh</label><br>
+                                <input type="radio"  name="fav_language" value="2">
+                                <label for="2">H-Food </label><br>
+                                <input type="radio"  name="fav_language" value="3">
+                                <label for="3">Thu Minh</label><br>
+                                <input type="radio"  name="fav_language" value="4">
+                                <label for="4">Tom Food</label><br>
+                                <input type="radio"  name="fav_language" value="5">
+                                <label for="5">VinFruits</label><br>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="item">
+                            <h1 style="text-align: center;">GIÁ CẢ</h1>
+                            <hr style="max-width: 30px; background-color: #3b9048; height: 2px;">
+                            <ul>
+                                <li><input type="radio" id="price1" name="price_filter" value="0"><label for="price1"> Giá dưới 100.000đ</label></li>
+                                <li><input type="radio" id="price2" name="price_filter" value="1"><label for="price2"> 100.000đ - 200.000đ</label></li>
+                                <li><input type="radio" id="price3" name="price_filter" value="2"><label for="price3"> 200.000đ - 300.000đ</label></li>
+                                <li><input type="radio" id="price4" name="price_filter" value="3"><label for="price4"> 300.000đ - 500.000đ</label></li>
+                                <li><input type="radio" id="price5" name="price_filter" value="4"><label for="price5"> 500.000đ - 1.000.000đ</label></li>
+                                <li><input type="radio" id="price6" name="price_filter" value="5"><label for="price6"> Giá trên 1.000.000đ</label></li>
+                            </ul>
+                        </div>
+                        
+                        <!--  -->
+                        <div class="item">
+                            <h1 style="text-align: center;">MÀU SẮC</h1>
+                            <hr style="max-width: 30px; background-color:  #3b9048; height: 2px;">
+                            <ul>
+                                <input type="radio"  name="fav_language" value="1">
+                                <label for="1">Đỏ </label><br>
+                                <input type="radio"  name="fav_language" value="2">
+                                <label for="2">Cam</label><br>
+                                <input type="radio"  name="fav_language" value="3">
+                                <label for="3">Vàng</label><br>
+                                <input type="radio"  name="fav_language" value="4">
+                                <label for="4">Lục</label><br>
+                                <input type="radio"  name="fav_language" value="5">
+                                <label for="5"> Lam</label><br>
+                                <input type="radio"  name="fav_language" value="6">
+                                <label for="6"> Tràm </label><br>
+                                <input type="radio"  name="fav_language" value="7">
+                                <label for="7"> Tím </label><br>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <hr style="width: 90%; background-color: #3b9048; height: 1px;">
+            <div style="margin-top: 80px;">
+                <div style="text-align: center"><a href="#"><img src="acces/img/logo.png" alt=""></a></div>
+                <h4 style="text-align: center;">CÔNG TY THỰC PHẨM HỮU CƠ & TỰ NHIÊN SEA FRUITS</h4>
+                <p style="text-align: center;">Trụ sở chính: Toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Quận Ba
+                    Đình, Hà Nội</p>
+                <p style="text-align: center;">Hotline: 1900 6750</p>
+                <p style="text-align: center;">Email: coolteam@gmail.com</p>
+            </div>
+            <footer class="information">
+                <div class="about-we">
+                    <h4 style="color: #3b9048;">VỀ CHÚNG TÔI</h4>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="about-we">
+                    <h4 style="color: #3b9048;">TIN KHUYẾN MÃI</h4>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="about-we">
+                    <h4 style="color: #3b9048;">DỊCH VỤ</h4>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="connext-we">
+                    <h4 style="color: #3b9048;">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <div class="nick-we">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-solid fa-camera"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <h4 style="color: #3b9048;">NHẬN TIN KHUYỄN MÃI</h4>
+                    <div class="login-we">
+                        <input type="text" placeholder="Nhập Email Của Bạn">
+                        <span>Đăng Kí</span>
+                    </div>
+                </div>
+            </footer>
+            <div style="height: 50px; width: 99%; background-color: rgb(79, 79, 79); margin-left: 3px;">
+                <p class="sea">Bản quyền thuộc về <span><a href="#">Sea Team</a></span> | Cung cấp bởi <span><a
+                            href="#">Sapo</a></span></p>
+            </div>
+        </nav>
+    </div>
+    <script src="acces/javascript/ja.js"></script>
+</body>
+
+</html>

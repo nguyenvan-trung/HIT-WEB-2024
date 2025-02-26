@@ -8,16 +8,7 @@ let sp = [
     ' <img src="catelist/image_cate_7.webp" alt=""> <h3>ÁO NỮ</h3>',
     ' <img src="catelist/image_cate_8.webp" alt=""> <h3>ÁO NỮ</h3>'
 ];
-let anh = [
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-]
+
 const big = document.querySelector('.big');
 const small = document.querySelector('.small');
 const ground = document.querySelector('.around');

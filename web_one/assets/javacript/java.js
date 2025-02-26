@@ -1,23 +1,14 @@
 let sp = [
-    ' <img src="catelist/image_cate_1.webp" alt="">  <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_2.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_3.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_4.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_5.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_6.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_7.webp" alt=""> <h3>ÁO NỮ</h3>',
-    ' <img src="catelist/image_cate_8.webp" alt=""> <h3>ÁO NỮ</h3>'
+    ' <img src="./assets/img/image_cate_1.webp" alt="">  <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_2.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_3.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_4.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_5.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_6.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_7.webp" alt=""> <h3>ÁO NỮ</h3>',
+    ' <img src="./assets/img/image_cate_8.webp" alt=""> <h3>ÁO NỮ</h3>'
 ];
-let anh = [
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-    'https://nguyenvan-trung.github.io/HIT-WEB-2024/BaiTapLon/buoi%20-%201/index.html',
-]
+
 const big = document.querySelector('.big');
 const small = document.querySelector('.small');
 const ground = document.querySelector('.around');
@@ -49,32 +40,32 @@ function toggleMoresmall() {
 
 const table =  document.querySelector('.table')
 let img =  [
-    '../spGril/sp11.webp',
-    '../spGril/sp16-3.webp',
-    '../spGril/sp5-660552ea-9642-48c7-adcd-4f01971415ea.webp',
-    '../spGril/sp13.webp',
-    '../spGril/sp17-3.webp',
-    '../spGril/sp15-2.webp',
-    '../spGril/sp6.webp',
-    '../spGril/sp4-5-ce1e678a-c3f7-4fef-9452-dfef5431f833.webp',
-    '../spGril/sp3-92d85e87-b843-4d75-b9fd-f008f8a82a0d.webp',
-    '../spGril/sp1-3-07cbb278-d6b5-4abc-aa4a-38bb07e4f088.webp',
-    '../spGril/sp14-6.webp',
-    '../spGril/sp12-2.webp'
+    './assets/img/sp11.webp',
+    './assets/img/sp16-3.webp',
+    './assets/img/sp5-660552ea-9642-48c7-adcd-4f01971415ea.webp',
+    './assets/img/sp13.webp',
+    './assets/img/sp17-3.webp',
+    './assets/img/sp15-2.webp',
+    './assets/img/sp6.webp',
+    './assets/img/sp4-5-ce1e678a-c3f7-4fef-9452-dfef5431f833.webp',
+    './assets/img/sp3-92d85e87-b843-4d75-b9fd-f008f8a82a0d.webp',
+    './assets/img/sp1-3-07cbb278-d6b5-4abc-aa4a-38bb07e4f088.webp',
+    './assets/img/sp14-6.webp',
+    './assets/img/sp12-2.webp'
 ];
 let img_replace = [
-    '../spGril/sp11-2.webp',
-    '../spGril/sp16.webp',
-    '../spGril/sp5-2-974b486e-7887-4720-a7ba-180d4f4b85ce.webp',
-    '../spGril/sp13-2.webp',
-    '../spGril/sp17.webp',
-    '../spGril/sp15.webp',
-    '../spGril/sp6-2-861c18c9-5a07-4585-9357-fdc93001d953.webp',
-    '../spGril/sp4-9e2c1a75-f4c2-4a8d-a9f7-340df225e4be.webp',
-    '../spGril/sp3-5-b3d76768-bb8d-4dec-b8ea-7a3b3684ea1e.webp',
-    '../spGril/sp1-4-77cc8c79-d6fa-4e25-a65e-d079ee8e5449.webp',
-    '../spGril/sp14-4.webp',
-    '../spGril/sp12.webp'
+    './assets/img/sp11-2.webp',
+    './assets/img/sp16.webp',
+    './assets/img/sp5-2-974b486e-7887-4720-a7ba-180d4f4b85ce.webp',
+    './assets/img/sp13-2.webp',
+    './assets/img/sp17.webp',
+    './assets/img/sp15.webp',
+    './assets/img/sp6-2-861c18c9-5a07-4585-9357-fdc93001d953.webp',
+    './assets/img/sp4-9e2c1a75-f4c2-4a8d-a9f7-340df225e4be.webp',
+    './assets/img/sp3-5-b3d76768-bb8d-4dec-b8ea-7a3b3684ea1e.webp',
+    './assets/img/sp1-4-77cc8c79-d6fa-4e25-a65e-d079ee8e5449.webp',
+    './assets/img/sp14-4.webp',
+    './assets/img/sp12.webp'
 ];
 for(let i = 0; i < 12;i++){
     

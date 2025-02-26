@@ -1,0 +1,174 @@
+.ro{
+    display: flex;
+}
+
+.grid_menu {
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.menu_product h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.lit {
+    margin-bottom: 10px;
+}
+
+.lit_sp_mot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.lit_sp_mot a {
+    text-decoration: none;
+    color: #878686;
+    font-weight: bold;
+}
+
+.lit_sp_mot button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: none; /* Ẩn mặc định */
+    border-radius: 5px;
+    transition: max-height 0.3s ease-out;
+}
+ul li a {
+    text-decoration: none;
+    color: #515050;
+    display: block;
+    padding: 5px 0;
+}
+ul li a:hover {
+    color: #ff6347;
+}
+/* Hiển thị danh sách khi mở */
+.lit.open ul {
+    display: block;
+}
+
+    /* Xoay biểu tượng */
+.lit_sp_mot button i {
+    transition: transform 0.3s ease;
+}
+.lit_sp_mot button i.rotate {
+    transform: rotate(180deg);
+    color:#ff6347;
+}
+.button {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0; /* Màu nền ban đầu */
+    border: 2px solid #bbb; /* Đường viền */
+    border-radius: 4px; /* Bo góc nhẹ */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button.checked {
+    background-color: #4caf50; /* Màu nền khi được chọn */
+    border-color: #388e3c; /* Đổi màu viền */
+}
+.button span {
+    font-size: 24px;
+    color: white;
+    display: none; /* Ẩn dấu tích ban đầu */
+}
+.button.checked span {
+    display: inline; /* Hiển thị dấu tích khi được chọn */
+}
+
+.price ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block; /* Hiển thị mặc định */
+    transition: max-height 0.3s ease-out;
+}
+
+.price ul.hidden {
+    display: none; /* Ẩn danh sách khi có lớp hidden */
+}
+
+.price .lit_sp_mot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.price .lit_sp_mot button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.price .lit_sp_mot button i {
+    transition: transform 0.3s ease;
+}
+
+.price .lit_sp_mot button i.rotate {
+    transform: rotate(180deg);
+    color: #ff6347;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container p {
+    margin: 0;
+    font-size: 16px;
+    color: #515050;
+}
+
+.button {
+    width: 26px;
+    height: 26px;
+    background-color: #e0e0e0; /* Màu nền ban đầu */
+    border: 2px solid #bbb; /* Đường viền */
+    border-radius: 4px; /* Bo góc nhẹ */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button.checked {
+    background-color: #4caf50; /* Màu nền khi được chọn */
+    border-color: #388e3c; /* Đổi màu viền */
+}
+
+.button span {
+    font-size: 24px;
+    color: white;
+    display: none; /* Ẩn dấu tích ban đầu */
+}
+
+.button.checked span {
+    display: inline; /* Hiển thị dấu tích khi được chọn */
+}
